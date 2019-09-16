@@ -5,7 +5,8 @@
 
   let images = [];
   onMount(async () => {
-    images = await api.rovers();
+    let response = await api.rovers();
+    images = response.photos;
   });
 </script>
 

@@ -1,5 +1,5 @@
-import API_KEY from "../config/NASA";
-import baseURL from "../config/NASA";
+import { API_KEY } from "../config/NASA";
+import { baseURL } from "../config/NASA";
 
 async function apiCall(request) {
   const response = await fetch(`${baseURL}${request}${API_KEY}`);
